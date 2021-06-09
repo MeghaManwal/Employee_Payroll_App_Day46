@@ -1,7 +1,6 @@
 //UC-1 To Modify Employee Payroll Class with new Attributes and Getters & Setters
 class EmployeePayrollData {
 
-
     get id() {
         return this._id;
     }
@@ -12,7 +11,6 @@ class EmployeePayrollData {
     get name() {
         return this._name;
     }
-
     set name(name) {
         let pattern = RegExp('^[A-Z]{1}[a-zA-Z]{2,}$');
         if (pattern.test(name))
@@ -24,7 +22,6 @@ class EmployeePayrollData {
     get profilePic() {
         return this._profilePic;
     }
-
     set profilePic(profilePic) {
         this._profilePic = profilePic;
     }
@@ -67,7 +64,6 @@ class EmployeePayrollData {
         else
             throw "Invalid Date"
     }
-
 
     toString() {
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
