@@ -35,7 +35,7 @@ document.querySelector('#display').innerHTML=innerHtml;
 }
 }
 
-//(Day-47) UC-5 To display Employee details from JSON object
+//(Day-47) UC-5 To display Employee Details from JSON object
 const getDepatmentHtml = (data) => {
     let deptHtml ='';
     for(let dept of data){
