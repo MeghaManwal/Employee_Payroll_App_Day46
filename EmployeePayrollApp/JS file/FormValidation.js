@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     SalaryOutput();
 });
  
-//UC-2 To add eventListener to salary and to validate name and date
+//(Day-46) UC-2 To add eventListener to salary and to validate name and date
 function validateName() {
     const name = document.querySelector('#name');
     const textError = document.querySelector('.text-error');
@@ -54,9 +54,10 @@ function checkDate() {
     } catch (e) {
         dateerror.textContent = e;
     }
+
 }
 
-//UC-3 To create EmployeePayroll Object on Save
+// (Day-46) UC-3 To create EmployeePayroll Object on Save
 const save = () => {
     try {
         let employeePayrollData = createEmployeePayroll();
@@ -83,8 +84,8 @@ const createEmployeePayroll = () => {
     employeePayrollData.profilePic = getSelectedValue('[name = profile]').pop();
     employeePayrollData.gender = getSelectedValue('[name = gender]').pop();
     employeePayrollData.department = getSelectedValue('[name = department]');
-    employeePayrollData.salary = getSelectedValue('#salary');
-    employeePayrollData.note = getSelectedValue('#notes');
+    employeePayrollData.salary = getInputValueId('#salary');
+    employeePayrollData.note = getInputValueId('#notes');
     console.log(employeePayrollData);
 
     return employeePayrollData;
@@ -111,8 +112,7 @@ const setTextValue = (id, message) => {
     textError.textContent = message;
 }
 
-
-//UC-4 To save Employee Payroll Object to Local Storage
+//(Day-46) UC-4 To save Employee Payroll Object to Local Storage
 const createAndUpdateStorage = (data) => {
     let dataList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
 
@@ -125,9 +125,10 @@ const createAndUpdateStorage = (data) => {
 
     localStorage.setItem("EmployeePayrollList", JSON.stringify(dataList));
     alert("data stored with name : " + data.name);
+
 }
 
-//UC-5 To reset the form on Clicking reset
+//(Day-46) UC-5 To reset the form on Clicking reset
 const resetForm = () => {
     setValue('#name', '');
     unsetSelectedValues('[name=profile]');
@@ -135,18 +136,17 @@ const resetForm = () => {
     unsetSelectedValues('[name=department]');
     setValue('#salary', ' ');
     setTextValue(".salary-output", '400000');
+    setTextValue('#text-error', ' ');
     setValue('#notes', ' ');
     setValue('#day', '1');
     setValue('#month', 'Jan');
     setValue('#year', '2020');
 }
-
 const unsetSelectedValues = (propertyValue) => {
     let allItems = document.querySelectorAll(propertyValue);
     allItems.forEach(item => { item.checked = false; }
     );
 }
-
 const setValue = (id, value) => {
     const element = document.querySelector(id);
     element.value = value;

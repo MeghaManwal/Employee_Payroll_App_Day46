@@ -2,6 +2,7 @@ body{
     margin: 0;
     height: 100%;
     font-family: Roboto;
+
 }
 
 .header{
@@ -117,6 +118,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+   
 }
 
 select{
@@ -128,6 +130,7 @@ select{
     letter-spacing: 0px;
     color: #42515f;
     background-color: transparent;
+
 }
 
 .button-parent{
@@ -151,6 +154,7 @@ select{
     cursor: pointer;
     border-radius: 5px;
     background: #f5f5f5;
+
 }
 
 .cancelButton{
@@ -167,6 +171,7 @@ select{
     .form{
         margin-top: 10px;
     }
+
     .submit-reset{
         width: 100%;
         display: flex;
@@ -174,17 +179,21 @@ select{
         flex-direction:  row-reverse;
         justify-content: space-between;
         margin-bottom: 20px;
+
     }
     .submitButton{
         margin: 0;
     }
+
     .button-parent{
         flex-direction: column-reverse;
         align-items: flex-start;
     }
+
 }
 
 @media only screen and (max-width:960px) {
+
     .cancelButton{
         margin-left: 0px;
     }
@@ -216,11 +225,11 @@ a.button:hover{
     margin-left: 30px;
 }
 
-
- @media only screen and (max-width:320px){
+@media only screen and (max-width:320px){
     .label{
         min-width: 50px;
-    }    
+    }
+     
 } 
 
 .profile-label{
