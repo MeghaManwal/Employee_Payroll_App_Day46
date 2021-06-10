@@ -1,4 +1,4 @@
-//(Day-46) UC-1 To Modify Employee Payroll Class with new attributes and Getters & Setters
+//(Day-46) UC-1 To Modify Employee Payroll Class with new Attributes and Getters & Setters
 class EmployeePayrollData {
 
     get id() {

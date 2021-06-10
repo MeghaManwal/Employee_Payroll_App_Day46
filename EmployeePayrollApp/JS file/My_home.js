@@ -1,6 +1,6 @@
 let employeePayrollList;
 
-//(Day-47) UC-4 To display EmployeePayrollDetails in Tabular format using Template Literals
+//(Day-47) UC-4 To display EmployeePayrollDetails in Tabular format using Template literals
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log("Called Event");
     employeePayrollList = getDataFromLocalStorage();

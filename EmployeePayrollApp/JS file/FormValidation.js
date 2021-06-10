@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     SalaryOutput();
 });
  
-//(Day-46) UC-2 To add eventListener to salary and to validate name and date
+//(Day-46) UC-2 To add eventListener to salary and to validate Name and date
 function validateName() {
     const name = document.querySelector('#name');
     const textError = document.querySelector('.text-error');

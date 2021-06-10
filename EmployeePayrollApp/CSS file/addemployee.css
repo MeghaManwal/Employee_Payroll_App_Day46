@@ -171,6 +171,7 @@ select{
     .form{
         margin-top: 10px;
     }
+
     .submit-reset{
         width: 100%;
         display: flex;
@@ -180,9 +181,11 @@ select{
         margin-bottom: 20px;
 
     }
+    
     .submitButton{
         margin: 0;
     }
+
     .button-parent{
         flex-direction: column-reverse;
         align-items: flex-start;
