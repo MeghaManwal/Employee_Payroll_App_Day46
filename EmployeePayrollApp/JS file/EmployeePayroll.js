@@ -67,7 +67,6 @@ class EmployeePayrollData {
             throw "Invalid Date"
     }
 
-
     toString() {
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
         const empDate = !startDate ? "undefined" : this.startDate.toLocaleDateString("en-us", options);
