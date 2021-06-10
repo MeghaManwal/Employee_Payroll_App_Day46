@@ -76,7 +76,7 @@ const createEmployeePayrollJSON = () => {
     return empPayrolllistLocal;
 }
 
-//(Day-47) UC-6 To display data from Local Storage
+//(Day-47) UC-6 To display data from the Local Storage
 const getDataFromLocalStorage= () => {
     return localStorage.getItem('EmployeePayrollList')? 
            JSON.parse(localStorage.getItem('EmployeePayrollList')) : [];
