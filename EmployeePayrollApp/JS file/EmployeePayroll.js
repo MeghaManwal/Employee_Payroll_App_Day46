@@ -62,7 +62,6 @@ class EmployeePayrollData {
         let currentDate = new Date();
         if (startDate > currentDate)
             throw "Start Date is a future date";
-        
         var diff = Math.abs(currentDate.getTime() - startDate.getTime());
         if(diff / (1000*60*60*24) > 30){
             throw "Start Date is a beyond 30 days";

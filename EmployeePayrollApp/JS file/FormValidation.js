@@ -165,7 +165,7 @@ const setValue = (id, value) => {
     element.value = value;
 }
 
-//Day-48 UC-2 To check for Update and set values of the Form elements
+//Day-48 UC-2 To check for Update and set values of the Form Elements
 const checkForUpdate = () => {
     const jsonData = localStorage.getItem('edit-emp');
     isUpdate = jsonData ? true : false;
