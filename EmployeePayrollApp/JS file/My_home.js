@@ -45,7 +45,7 @@ const getDateFromLocalStorage = () => {
         JSON.parse(localStorage.getItem('EmployeePayrollList')) : [];
 }
 
-//Day-48 UC-1 To remove an Employee from the Payroll Details Table
+//Day-48 UC-1 To remove an Employee from the Payroll Details table
 const remove = (data) => {
 
     let employeeData = employeePayrollList.find(empData => empData._id == data.id);

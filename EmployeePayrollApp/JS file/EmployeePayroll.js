@@ -22,7 +22,6 @@ class EmployeePayrollData {
     get profilePic() {
         return this._profilePic;
     }
-
     set profilePic(profilePic) {
         this._profilePic = profilePic;
     }
