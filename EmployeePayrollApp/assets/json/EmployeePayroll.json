@@ -1,0 +1,65 @@
+{
+  "EmployeePayroll": [
+    {
+      "id": 1,
+      "_name": "Rajeev",
+      "_gender": "Male",
+      "_department": [
+        "Sales",
+        "Finance"
+      ],
+      "_salary": "450000",
+      "_startDate": "12 May 2020",
+      "_note": "Hi",
+      "_profilePic": "../assets/profile-images/Ellipse -3.png"
+    },
+    {
+      "id": 2,
+      "_name": "Riya",
+      "_gender": "Female",
+      "_department": [
+        "Engineering"
+      ],
+      "_salary": "370000",
+      "_startDate": "6 May 2020",
+      "_note": "Hlw All",
+      "_profilePic": "../assets/profile-images/Ellipse -10.png"
+    },
+    {
+      "_name": "Robert",
+      "_gender": "Male",
+      "_department": [
+        "others"
+      ],
+      "_salary": "500000",
+      "_startDate": "20 Jun 2020",
+      "_note": "Robert Here!",
+      "_profilePic": "../assets/profile-images/Ellipse -1.png",
+      "id": 3
+    },
+    {
+      "_name": "Stark",
+      "_gender": "Male",
+      "_department": [
+        "Finance"
+      ],
+      "_salary": "400000",
+      "_startDate": "28 Jun 2020",
+      "_note": "Welcome",
+      "_profilePic": "../assets/profile-images/Ellipse -3.png",
+      "id": 4
+    },
+    {
+      "_name": "Neha",
+      "_profilePic": "../assets/profile-images/Ellipse -10.png",
+      "_gender": "Female",
+      "_department": [
+        "Finance"
+      ],
+      "_salary": "464500",
+      "_note": "         Hiii Myself Neha!           ",
+      "_startDate": 1623090600000,
+      "id": 5
+    }
+  ]
+}
